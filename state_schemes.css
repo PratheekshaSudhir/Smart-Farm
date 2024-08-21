@@ -1,0 +1,55 @@
+.scheme_header{
+    background-image: url("https://www.myscheme.gov.in/_next/image?url=https%3A%2F%2Fcdn.myscheme.in%2Fimages%2Fcategories%2Fbanners%2FAgriculture.jpg&w=1920&q=75");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0;
+    padding:0;
+    height:200px;
+} 
+.scheme_header,h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:center;
+    padding-left: 10px;
+    padding-right: 400px;
+    padding-top: 50px;
+    font-style: italic;
+    font-weight: 900;
+    font-size:42px;
+    color:darkolivegreen;
+}
+table,td,th,tr{
+    border: 1px solid black;
+    border-radius: 5px;
+    /* border-collapse: collapse; */
+    padding: 10px;
+    text-align: center;
+    font-family: cursive;
+}
+th{
+    padding:25px;
+    background-color: darkolivegreen;
+    color:antiquewhite;
+}
+th:hover{
+    color:greenyellow;
+}
+tr{
+    background-color: cornsilk;
+}
+tr:hover{
+    background-color:darkseagreen;
+}
+h2{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-size: 30px;
+    color:darkolivegreen;
+    background-color:rgba(196, 237, 139, 0.953);
+    padding:20px;
+}
+h2:hover{
+    transform: scale(1.1);
+    color:forestgreen;
+}

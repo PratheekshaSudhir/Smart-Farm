@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <title>
+            login form
+        </title>
+        <link rel="stylesheet" href="login2.css">
+    </head>
+    <body id="loginbody">
+        <header>
+            <h1><u>Registeration Page</u></h1>
+            <h3>Make sure you enter all the details correctly</h3>
+        </header>
+        <form name="form" action="#" method="POST" class="loginform" onsubmit="return  validateForm(event) ">
+            <fieldset>
+                <fieldset>
+                    <legend>Name</legend>
+                    <label for="name" >First Name:</label>
+            <input type="text" id="name" name="fname" required><br><br>
+            <label for="name" >Last Name:</label>
+            <input type="text" id="name" name="lname">
+                </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label >Gender:</label>
+                <input type="radio"  name="gender">
+                <label for="male">Male</label>
+                <input type="radio"  name="gender">
+                <label for="male">Female</label>
+                <input type="radio"  name="gender">
+                <label for="male">Others</label>
+                <input type="radio"  name="gender">
+                <label for="male">Prefer not to say</label><br><br>
+                <label for="email">Email id:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="name">Phone Number:</label>
+                <input type="text" id="name" name="phone" required><br><br>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="5" cols="100"></textarea><br><br>
+                <label for="city">City:</label>
+                <input type="text" name="city" required>
+                <label for="state">State:</label >
+                <input type="text" name="state" id="state"required><br><br>
+                <label for="pincode">Pincode:</label>
+                <input type="text" name="pin" id="pin"required>
+                <label for="country">Country:</label>
+                <input type="text" name="country" id="country"required>
+            </fieldset>
+            <fieldset>
+                <legend>Farm Information</legend>
+                <label for="farmtype">Type Of Farming:</label>
+                <input list="farmtype">
+                <datalist id="farmtype">
+                    <option value="Crop farming">
+                    <option value="Livestock farming">
+                    <option value="Mixed farming">
+                    <option value="Subsistence farming">
+                    <option value="Organic farming">
+                    <option value="Agroforestry">
+                </datalist><br><br>
+                <label for="farmsize">Farm Size(in hectares):</label>
+                <input type="text" name="farmsize"><br><br>
+                <label for="location">Location of the farm (if different from personal address):</label>
+                <input type="text" name="location" id="location"><br><br>
+                <label for="years">Years of Experience in Agriculture:</label>
+                <input type="text" name="years" id="years">
+            </fieldset>
+            <fieldset>
+                <legend>Products</legend>
+                <label for="croptype">Names of Crops grown/livestock:</label>
+                <input type="text" name="croptype" id="croptype"><br><br>
+                <label for="quantity">Average quantity of production (in tones per hectares):</label>
+                <input type="text" name="quantity" id="quantity"><br><br>
+                <label for="certification">Any certifications or organic labels (if applicable):</label>
+                <input type="text" name="certification" id="certification">
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Marketing Preferences
+                </legend>
+                <label for="marketChannels">Preferred marketing channels:</label>
+                <select name="marketChannels" id="marketChannels">
+                    <option value="NotSelected">Not Selected</option>
+                    <option value="local markets">Local markets</option>
+                    <option value="online platforms">Online platforms</option>
+                    <option value="direct sales">Direct sales</option>
+                </select>
+            </fieldset>
+           <fieldset>
+            <legend>
+                Password
+            </legend>
+            <label for="password"> Password:</label>
+            <input type="password" id="name" name="pass" required><br><br>
+            <label for="password">Confirm password:</label>
+            <input type="password" id="name" name="cpass" required>
+           </fieldset>
+           
+            
+            
+            <label id="checkbox" ><input type="checkbox" required ></label>
+            <p id="agree">Agree to terms and Condition</p>
+            
+            <input type="submit" value="Register" name="register">
+            <input type="reset">
+            </fieldset>
+            
+        </form>
+        <footer>
+            <p>Grow, Connect, Thrive! Join a community of modern farmers revolutionizing agriculture. </p>
+        </footer>
+        <script>
+            function passValidate() {
+                var pass = document.form.pass.value;
+                var cpass = document.form.cpass.value;
+                
+                if (pass.length < 8) {
+                    alert("Password must be at least 8 characters long");
+                    return false;
+                }
+                
+                if (pass != cpass) {
+                    alert("Password is not matching!!!");
+                    return false;
+                }
+                
+                // Return true only if all validations pass
+                return true;
+            }
+    
+            function validateName() {
+                var firstName = document.form.fname.value;
+                var lastName = document.form.lname.value;
+                var city = document.form.city.value;
+                var country = document.form.country.value;
+                var state = document.form.state.value;
+                var nameRegex = /^[a-zA-Z]+$/;
+    
+                if (!nameRegex.test(firstName) || !nameRegex.test(lastName)) {
+                    alert('Please enter alphabets only for the name.');
+                    return false;
+                }
+                else if (!nameRegex.test(city)){
+                    alert("Please enter alphabets for city");
+                }
+                else if (!nameRegex.test(state)){
+                    alert("Please enter alphabets for state");
+                }
+                else if (!nameRegex.test(country)){
+                    alert("Please enter alphabets for country");
+                }
+    
+                return true;
+            }
+    
+            function validatePhone() {
+                var phone = document.form.phone.value;
+                var phoneRegex = new RegExp("^[0-9]{10}$");
+                var pinRegex = /^[0-9]{6}$/;
+                var pin=document.form.pin.value;
+    
+                if (!phoneRegex.exec(phone)) {
+                    alert('Please enter numeric characters only for the phone number.');
+                    return false;
+                }
+                else if(!pinRegex.test(pin)){
+                    alert("Please enter 6 numeric characters only for the Pincode")
+                }
+    
+                return true;
+            }
+    
+            function validateForm(event) {
+                event.preventDefault();
+                var isValid = true;
+    
+                // Call all validation functions
+                isValid &= validateName();
+                isValid &= validatePhone();
+                isValid &= passValidate();
+    
+                if(isValid){
+                    alert("You are successfully registered as a farmer in this website. You will now be directed to the farmer interface.");
+                    window.location.href="farmer.html";
+                }
+            }
+        </script>
+    </body>
+    </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schemes</title>
+    <style>
+        body {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-image: url("https://t4.ftcdn.net/jpg/03/57/54/77/360_F_357547735_aTZvm1ec8Uzgsd1aTukmFiOw4iXX2aKS.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .heading{
+            text-align: center;
+            font-size: 50px;
+            color:azure;
+            margin-top: 75px;
+        }
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 100px;
+        }
+        .card {
+            width: 350px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+            text-align: center;
+            color:azure;
+            backdrop-filter: blur(5px);
+        }
+        .card:hover{
+            transform: scale(1.08);
+        }
+        .explore{
+            border:1px solid rgb(34, 89, 34);
+            border-radius: 4px;
+            color:antiquewhite;
+            padding: 6px;
+            margin: 30px;
+            font-size: 20px;
+            background-color:darkcyan;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading"><i>Schemes for Farmers</i></h1>
+    <div class="card-container">
+        <div class="card">
+            <h1>State Agricultural Scheme</h1>
+            <h3><em>State agricultural schemes aims at promoting sustainable farming practices and enhancing rural livelihoods through financial incentives,insurance schemes and technical support</em></h3>
+            <a class="explore" href="state_schemes.html" target="_self">Explore</a>
+        </div>
+        <div class="card">
+            <h1>Central Agricultural Scheme</h1>
+            <h3><em>Central agricultural schemes aim to improve agricultural productivity and enhance the livelihoods of farmers through various initiatives such as subsidies and infrastructure development</em></h3>
+            <a class="explore" href="central_schemes.html" target="_self">Explore</a>
+        </div>
+    </div>
+</body>
+</html>
