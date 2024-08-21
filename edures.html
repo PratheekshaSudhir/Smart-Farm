@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="edures.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Educational resources</h1>
+    <div class="video-container">
+        <h2>Mordern techniques</h2>
+        <div class="video"><iframe src="https://www.youtube.com/embed/rCe2J3B8mks" ></iframe></div>
+        <div class="video"><iframe src="https://www.youtube.com/embed/60YD5jsSlmo"></iframe></div>
+    </div> 
+    <div class="video-container">
+            <h2>Agricultural farming buisness</h2>
+
+        <div class="video"><iframe src="https://www.youtube.com/embed/54GbsV4Hexw"></iframe></div>
+        <div class="video"><iframe src="https://www.youtube.com/embed/pK_gS-HOhrg"></iframe></div>
+    </div>    
+    <div class="video-container">
+            <h2>Raised Bed Farming</h2>
+
+        <div class="video"><iframe src="https://www.youtube.com/embed/kN6fiN4qYTg"></iframe></div>
+        <div class="video"><iframe src="https://www.youtube.com/embed/uCM0Tvp6Dko"></iframe></div>
+    </div>   
+    <div class="video-container">
+            <h2>Vertical Farming </h2>
+
+        <div class="video"><iframe src="https://www.youtube.com/embed/QKhMqDHOm6U"></iframe></div>
+        <div class="video"><iframe src="https://www.youtube.com/embed/3Ww2TP_tU7o"></iframe></div>
+    </div>
+    <div class="video-container">
+            <h2>Diary Farming </h2>
+
+        <div class="video"><iframe src="https://www.youtube.com/embed/Ldz4_tFmolw"></iframe></div>
+        <div class="video"><iframe src="https://www.youtube.com/embed/Yk5YF1gvSEA"></iframe></div> 
+    </div>
+    </div>
+    <!-- <div class="popup">
+        <span>&times;</span>
+        <iframe id=vidpop src="https://www.youtube.com/embed/rCe2J3B8mks"></iframe> 
+    </div>
+</div>
+<script>
+    document.querySelector(".video-container").addEventListener("click", function(event) {
+        // Check if the clicked element is an iframe
+        if (event.target.tagName === "IFRAME") {
+            // Prevent the default behavior of the iframe click event
+            event.preventDefault();
+            // Show the popup
+            document.querySelector('.popup').style.display = 'block';
+            // Set the src attribute of the popup iframe to the clicked iframe src
+            document.querySelector('#vidpop').src = event.target.getAttribute('src');
+        }
+    });
+
+    document.querySelector('.popup span').onclick = () => {
+        // Hide the popup when the close button is clicked
+        document.querySelector('.popup').style.display = 'none';
+    }
+</script>  -->
+</body>
+</html>
+

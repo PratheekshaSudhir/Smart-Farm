@@ -1,0 +1,39 @@
+body{
+    background-color: darkkhaki;
+}
+h1{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 45px;
+    font-style: oblique;
+    font-weight: bolder;
+    color: darkgreen;
+}
+h1:hover{
+    transform: scale(1.1);
+}
+table,td,th,tr{
+    border: 1px solid black;
+    border-radius: 5px;
+    /* border-collapse: collapse; */
+    padding: 10px;
+    text-align: center;
+    font-family: cursive;
+}
+table{
+    margin-bottom: 70px;
+}
+th{
+    padding:25px;
+    background-color: darkolivegreen;
+    color:antiquewhite;
+}
+th:hover{
+    color:greenyellow;
+}
+tr{
+    background-color: cornsilk;
+}
+tr:hover{
+    background-color:darkseagreen;
+}

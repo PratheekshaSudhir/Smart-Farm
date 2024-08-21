@@ -1,0 +1,244 @@
+
+
+body, .navbar {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #15292c;
+    padding: 10px 50px;
+  }
+  
+  .brand h1 {
+    font-size: 50px;
+    color:white;
+    padding-left: 515px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  /* nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #3498db;
+  }
+   */ 
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Body Styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+     
+  background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #15292c;
+    }
+   
+    
+    /* Header Styles */
+    header {
+      background-color:rgb(43, 138, 43);
+      color: #fff;
+      text-align: center;
+      padding: 1px 0;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      
+    }
+    header p{
+      font-size: 18px;
+      margin-top: 10px;
+      font-style: italic;
+      margin-bottom: 30px;
+      background-color:lightgreen;
+     
+      position:center; 
+      top: 50%; 
+      left: 50%; 
+      transform: translate(-50%, -50%); 
+    }
+    header button{
+      padding: 10px 20px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 0px;
+      background-color:rgb(37, 223, 108);
+      cursor: pointer;
+      color:#f0f0f0
+    }
+    header button:hover{
+      background-color: aquamarine;
+    }
+    
+    
+ 
+.slider-frame{
+    overflow: hidden;
+    height: 800px;
+    width: 5000px;
+    margin-right: 560px;
+   
+}
+
+/*---------- SLIDE ANIMATION --------------*/
+
+
+@keyframes slide_animation{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1200px;}
+    30% {left:1200px;}
+    40% {left: 2400px;}
+    50% {left: 2400px;}
+    60% {left: 1200px;}
+    70% {left: 1200px;}
+    80% {left: 0px;}
+    90% {left: 0px;}
+    100% {left:0px;}
+}
+
+@-webkit-keyframes slide_animation{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1200px;}
+    30% {left:1200px;}
+    40% {left: 2400px;}
+    50% {left: 2400px;}
+    60% {left: 1200px;}
+    70% {left: 1200px;}
+    80% {left: 0px;}
+    90% {left: 0px;}
+    100% {left:0px;}
+}
+
+.slide-images{
+    width: 8600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    animation-name: slide_animation;
+    -webkit-animation-duration: 33s;
+    animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.img-container{
+    height: 900px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
+.user-type {
+    position:absolute;
+    bottom: 500px; ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+  
+  .user-type {
+    padding:50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .user-type {
+    position: relative;
+    top: 658px;/* Adjust this value based on how much space you want between the header and .user-type */
+     box-shadow: #15292c;
+     
+  }
+  
+  .user-type .farmer,
+  .user-type .user {
+    text-align: center;
+    width: 45%;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color:rgb(255, 255, 255);
+    margin: -590px auto 50px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .user-type .farmer:hover,
+  .user-type .user:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.4);
+  }
+  
+  .user-type img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 30px;
+  }
+  .user-type h2{
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .user-type p{
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .user-type .btn{
+    display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #0b4951;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  }
+  .user-type .btn:hover {
+    background-color: #008ba3;
+  }
+  
+ 
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+}
